@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Morse Code Interpreter - By Socket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/morsecode.js') }}"></script>
+</head>
+<body>
+
+    <h1>Socket</h1>
+    <input type="text" name="emit_data" id="emit_data" placeholder="Message">
+    <button type="button" onclick="sendMessage(event)">Send</button>
+    <button type="button" onclick="disconnect()">Disconnect</button>
+
+    <h2>Logs</h2>
+    <div id="log" ></div>
+
+</body>
+</html>
