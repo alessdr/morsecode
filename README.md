@@ -53,7 +53,7 @@ Não existe um padrão de arquitetura que resolva todos os problemas de todas as
 
 Para nosso exemplo acima, por se tratar de uma aplicação web simple que nem banco de dados utiliza, podemos sugerir alguns modelos que atenderiam as necessidades de escalar a aplicação para grandes quantidades de usuários, que por sua vez, se traduz em elevado número de acessos.
 
-Seja abaixo alguns modelos sugeridos.
+Segue abaixo modelo sugerido, visando simplificar o processo:
 
 
 ### Nuvem AWS:
@@ -65,9 +65,6 @@ Este serviço utiliza-se do **Cloud Watch** (outro serviço da AWS) para monitor
 Para complementar, da mesma forma que o **Auto Scaling** é utilizado para aumentar nossos recursos, também pode ser utilizado para diminuí-los.
 
 ![Fluxo de Funcionamento](./images/autoscaling.png)
-
-
-### 
 
 
 ## Pré-Requisitos
