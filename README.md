@@ -113,6 +113,7 @@ Uma versão futura poderia conter os seguintes recursos/elementos:
 * Caso venhamos a armazenar dados em uma base, e esta vier a crescer muito, poderíamos implementar réplicas de leitura para acelerar os acessoas aos bancos.
 * Implementar alguma ferramenta de monitoria tipo o [New Relic](https://newrelic.com/), com utilização de monitoramento ativo e passivo e envio de relatórios para os responsáveis via e-mail/celular.
 * Implementação de CI/CD para nosso fluxo de desenvolvimento.
+* Aumentar a cobertura dos testes.
 
 ## Ainda em tempo
 
