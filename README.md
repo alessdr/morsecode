@@ -98,3 +98,6 @@ docker run -d --rm --name morse -p 5000:5000 morse
 ```
 http://127.0.0.1:5000
 ```
+
+## Considerações finais
+
