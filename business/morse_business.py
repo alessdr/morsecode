@@ -14,7 +14,7 @@ class Morse:
             new_msg = ''
             arr_msg = self.msg.split(' ')
             for item in arr_msg:
-                if item != ' ':
+                if item != '':
                     new_msg = new_msg + list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT.values()).index(item)]
                 else:
                     new_msg = new_msg + ' '

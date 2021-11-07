@@ -31,6 +31,7 @@ footer {
 
 textarea {
     resize: none;
+    font-size: 20px !important;
 }
 
 .background-container {
