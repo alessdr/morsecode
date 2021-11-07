@@ -5,6 +5,7 @@ from constants.constants import *
 from business.morse_business import Morse
 
 async_mode = None
+# app = Flask(__name__)
 # Temporary fix to debug in pycharm
 app = Flask(__name__, instance_path="/{project_folder_abs_path}/instance")
 app.config['SECRET_KEY'] = config('SECRET')
@@ -25,7 +26,7 @@ def receive_message(message):
         new_msg = mci.to_text()
     else:
         new_msg = message['data']
-    emit('mc_response', {'data': new_msg, 'origin': message['origin']})
+    emit('mc_response', {'data': new_msg, 'origin': message['origin']}, broadcast=False)
 
 
 @socketio.on('disconnect_request', namespace='/morse-code-interpreter')
@@ -42,4 +43,4 @@ if __name__ == '__main__':
     environment = config('ENVIRONMENT')
     port = config('PORT')
     '''
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=False)
