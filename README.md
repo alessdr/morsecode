@@ -27,7 +27,7 @@ As principais libs utilizadas foram:
 * Backend:
   * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
   * [Gunicorn](https://gunicorn.org/)
-  * [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/)
+  * [Flask-SocketIO](https://github.com/miguelgrinberg/Flask-SocketIO)
   * [Simple-WebSocket](https://pypi.org/project/simple-websocket/)
 
 
@@ -114,4 +114,12 @@ Uma versão futura poderia conter os seguintes recursos/elementos:
 * Implementar alguma ferramenta de monitoria tipo o [New Relic](https://newrelic.com/), com utilização de monitoramento ativo e passivo e envio de relatórios para os responsáveis via e-mail/celular.
 * Implementação de CI/CD para nosso fluxo de desenvolvimento.
 
+## Ainda em tempo
 
+Uma versão instalada e funcional da aplicação, pode ser vista na url abaixo, deployada no [Heroku](https://www.heroku.com/).
+
+```
+https://morse-code-interpreter.herokuapp.com/
+```
+
+**Obs:** Por favor, seja paciente ao executa-la, pois se trata de uma conta free e a máquina demoar um pouco a subir na 1a execução.
