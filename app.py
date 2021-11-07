@@ -1,7 +1,7 @@
-from flask import Flask, render_template, session, copy_current_request_context
+from flask import Flask, render_template, copy_current_request_context
 from flask_socketio import SocketIO, emit, disconnect
 from decouple import config
-
+from constants.constants import *
 
 async_mode = None
 # Temporary fix to debug in pycharm
@@ -17,7 +17,7 @@ def index():
 
 @socketio.on('mc_event', namespace='/morse-code-interpreter')
 def receive_message(message):
-    emit('mc_response', {'data': message['data']})
+    emit('mc_response', {'data': message['data'], 'origin': message['origin']})
 
 
 @socketio.on('disconnect_request', namespace='/morse-code-interpreter')
@@ -26,7 +26,7 @@ def disconnect_request():
     def can_disconnect():
         disconnect()
 
-    emit('mc_response', {'data': 'Disconnected!'}, callback=can_disconnect)
+    emit('mc_response', {'data': 'Disconnected!', 'origin': MSG_ORIGIN_SYSTEM}, callback=can_disconnect)
 
 
 if __name__ == '__main__':
