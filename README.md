@@ -113,5 +113,6 @@ Uma versão futura poderia conter os seguintes recursos/elementos:
   * Poderiamos colocar nosso código via **Lambda**, e com isso não nos preocuparmos mais com escalonamento, pois este serviço já faz o gerenciamento de toda a infraestrutura de execução de nosso código.
   * No caso de utilização de bancos, poderiamos utilizar o servico **RDS** (Relational Database Service).
   * Caso não optemos pelo Lambda, poderiamos utilizar o **EC2** e o serviço de **Auto-scaling**
-* Caso venhamos a armazenar dados em uma base, e esta vier a crescer muito, poderíamos implementar réplicas de leitura para bancos.
-* 
+* Caso venhamos a armazenar dados em uma base, e esta vier a crescer muito, poderíamos implementar réplicas de leitura para acelerar os acessoas aos bancos.
+* Implementar alguma ferramenta de monitoria tipo o [New Relic](https://newrelic.com/), com utilização de monitoramento ativo e passivo e envio de relatórios para os responsáveis via e-mail/celular.
+
