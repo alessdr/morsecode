@@ -116,10 +116,12 @@ Uma versão futura poderia conter os seguintes recursos/elementos:
 
 ## Ainda em tempo
 
-Uma versão instalada e funcional da aplicação, pode ser vista na url abaixo, deployada no [Heroku](https://www.heroku.com/).
+a) Uma versão instalada e funcional da aplicação, pode ser vista na url abaixo, deployada no [Heroku](https://www.heroku.com/).
 
 ```
 https://morse-code-interpreter.herokuapp.com/
 ```
 
-**Obs:** Por favor, seja paciente ao executa-la, pois se trata de uma conta free e a máquina demoar um pouco a subir na 1a execução.
+**Obs:** Por favor, seja paciente ao executa-la, pois se trata de uma conta free e a máquina demorar um pouco a subir na 1a execução.
+
+b) O arquivo **.env** só se encontra no repositório da aplicação, pois esta é apenas para fins didáticos. Nunca versione este arquivo.
