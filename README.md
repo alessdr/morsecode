@@ -4,7 +4,7 @@
 
 Este projeto tem o intuíto de atuar como uma pequena aplicação web, que possibilitará a seu usuário traduzir **código morse** para texto e vice-versa.
 
-## Desenvolvimento
+## Tecnologias empregadas
 
 A aplicação foi desenvolvida com as seguintes tecnologias:
 
