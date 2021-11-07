@@ -8,7 +8,7 @@ Este projeto tem o intuíto de atuar como uma pequena aplicação web, que possi
 
 ## Funcionamento
 
-A idéia básica por traz do funcionamento de nossa aplicação, é que o usuário possa se conectar a um servidor via web socket e iniciar um processo de comunicação, onde ele enviará dados ao servidor e este, em tempo real, retiornará a tradução do conteúdo desejado.
+A idéia básica por traz do funcionamento de nossa aplicação, é que o usuário possa se conectar a um servidor via web socket e iniciar um processo de comunicação, onde ele enviará dados (mensagens) ao servidor e este, em tempo real, traduzirá e retornará a tradução do conteúdo ao usuário.
 
 
 ## Tecnologias empregadas
