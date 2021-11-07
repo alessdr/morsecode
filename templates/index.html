@@ -37,10 +37,16 @@
 
                 <div class="col-md-2 buttons-column">
                     <div class="form-group row">
-                        <button type="button" class="btn btn-block btn-info" onclick="sendMessage(MSG_ORIGIN_MORSE)">To Text</button>
+                        <button type="button" class="btn btn-block btn-info" onclick="sendMessage(MSG_ORIGIN_MORSE)">To Text&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                     <div class="form-group row">
-                        <button type="button" class="btn btn-block btn-warning" onclick="sendMessage(MSG_ORIGIN_TEXT)">To Morse</button>
+                        <button type="button" class="btn btn-block btn-warning" onclick="sendMessage(MSG_ORIGIN_TEXT)"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;To Morse</button>
+                    </div>
+                    <div class="form-group row">
+                        <button type="button" class="btn btn-block" onclick="clearContent('emit_data_text')">Clear Plan Text</button>
+                    </div>
+                    <div class="form-group row">
+                        <button type="button" class="btn btn-block" onclick="clearContent('emit_data_morse')">Clear Morse Code</button>
                     </div>
                 </div>
 
@@ -52,7 +58,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 element-right">
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-question-sign" title="Click for instructions" onclick="showModal()"></span>
+                </div>
+                <div class="col-md-11 element-right">
                     <span id="spnStatus" class="status">Disconnected</span>
                 </div>
             </div>
@@ -62,6 +71,19 @@
     <footer>
         <marquee directions="left" class="morse-code">--&nbsp;---&nbsp;.-.&nbsp;...&nbsp;.&nbsp;&nbsp;&nbsp;-.-.&nbsp;---&nbsp;-..&nbsp;.&nbsp;&nbsp;&nbsp;..&nbsp;-.&nbsp;-&nbsp;.&nbsp;.-.&nbsp;.--.&nbsp;.-.&nbsp;.&nbsp;-&nbsp;.&nbsp;.-.</marquee>
     </footer>
+
+    <!-- Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h4>Instructions</h4>
+            <hr>
+            <ol>
+                <li>Morse Code area accepts only dot and trace.</li>
+                <li>Plain text area accepts only capital letters and space.</li>
+            </ol>
+        </div>
+    </div>
 
 </body>
 </html>

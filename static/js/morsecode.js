@@ -21,6 +21,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         if (callBack) callBack();
     });
+
+    document.getElementById("emit_data_morse").addEventListener('keypress', function (event) {
+        if (event.keyCode !== 32 && event.keyCode !== 45 && event.keyCode !== 46) {
+            event.preventDefault();
+        }
+    });
+
+    document.getElementById("emit_data_text").addEventListener('keypress', function (event) {
+        if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 65 || event.keyCode > 90) && event.keyCode !== 32) {
+            event.preventDefault();
+        }
+    });
 });
 
 function sendMessage(origin) {
@@ -41,4 +53,23 @@ function disconnect() {
 
 function reconnect() {
     window.location.reload(true);
+}
+
+function clearContent(element) {
+    document.getElementById(element).value = '';
+}
+
+function showModal() {
+    let modal = document.getElementById("helpModal");
+    modal.style.display = "block";
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
+function closeModal() {
+    let modal = document.getElementById("helpModal");
+    modal.style.display = "none";
 }
