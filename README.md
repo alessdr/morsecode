@@ -63,6 +63,10 @@ Supondo que nossa aplicação foi instalada em um servidor **EC2** (Elastic Comp
 Este serviço utiliza-se do **Cloud Watch** (outro serviço da AWS) para monitorar um servidor específico (ou pull de servidores). Com base em métricas definidas, quando um valor X é atingido, ele envia uma notificação via **SNS** (outro serviço da AWS) para o serviço EC2, afim de que este último crie e instancie um novo servidor, e o introduza em nosso pull de recursos, com isso garantindo completo atendimento aos nossos usuários.
 
 Para complementar, da mesma forma que o **Auto Scaling** é utilizado para aumentar nossos recursos, também pode ser utilizado para diminuí-los.
+
+![Fluxo de Funcionamento](./images/autoscalling.png)
+
+
 ### 
 
 
