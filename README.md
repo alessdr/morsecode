@@ -122,6 +122,6 @@ a) Uma versão instalada e funcional da aplicação, pode ser vista na url abaix
 https://morse-code-interpreter.herokuapp.com/
 ```
 
-**Obs:** Por favor, seja paciente ao executa-la, pois se trata de uma conta free e a máquina demorar um pouco a subir na 1a execução.
+**Obs:** Por favor, seja paciente ao executa-la, pois se trata de uma conta free e a máquina demora um pouco a subir na 1a execução.
 
 b) O arquivo **.env** só se encontra no repositório da aplicação, pois esta é apenas para fins didáticos. Nunca versione este arquivo.
