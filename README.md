@@ -64,7 +64,7 @@ Este serviço utiliza-se do **Cloud Watch** (outro serviço da AWS) para monitor
 
 Para complementar, da mesma forma que o **Auto Scaling** é utilizado para aumentar nossos recursos, também pode ser utilizado para diminuí-los.
 
-![Fluxo de Funcionamento](./images/autoscalling.png)
+![Fluxo de Funcionamento](./images/autoscaling.png)
 
 
 ### 
