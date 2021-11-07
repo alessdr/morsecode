@@ -8,7 +8,7 @@ Este projeto tem o intuíto de atuar como uma pequena aplicação web, que possi
 
 ## Tecnologias empregadas
 
-A aplicação foi desenvolvida com as seguintes tecnologias:
+Para o desenvolvimento de nossa aplicação tomamos como base as seguintes tecnologias:
 
 * Backend: Python
 * Frontend: HTML5, CSS e JS
