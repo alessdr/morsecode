@@ -101,3 +101,17 @@ http://127.0.0.1:5000
 
 ## Considerações finais
 
+O tempo para desenvolvimento desta aplicação foi curto (cerca de 1 dia e meio)
+
+Por este motivo não foi possível implementar todas as funcionalidades e arquitetura desejadas.
+
+Uma versão futura poderia conter os seguintes recursos/elementos:
+
+* Autenticação (Via serviço externo ou com a utilização do próprio Flask, via lib Flask-Login).
+* Implementação de log de acessos.
+* Caso a implantação fosse feita na AWS:
+  * Poderiamos colocar nosso código via **Lambda**, e com isso não nos preocuparmos mais com escalonamento, pois este serviço já faz o gerenciamento de toda a infraestrutura de execução de nosso código.
+  * No caso de utilização de bancos, poderiamos utilizar o servico **RDS** (Relational Database Service).
+  * Caso não optemos pelo Lambda, poderiamos utilizar o **EC2** e o serviço de **Auto-scaling**
+* Caso venhamos a armazenar dados em uma base, e esta vier a crescer muito, poderíamos implementar réplicas de leitura para bancos.
+* 
