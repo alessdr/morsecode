@@ -38,6 +38,14 @@ As principais libs utilizadas foram:
 
 ## Arquitetura inicial
 
+Por se tratar de uma aplicação muito simples (apenas um Frontend que conversa com um Backend, e não armazena dados), e por não requerer grandes recursos computacionais, optamos por uma arquitetura igualmente simplificado, onde nossa aplicação possui todo o bloco de código (Frontend e Backend) em um único artefato.
+
+Para este artefato utilizaremos um container (Docker), pois este poderá alocar/concentrar todos os recursos necessários (SO, código fonte, etc) em um único ponto.
+
+Esta forma de empacotamento se faz muito eficaz, pois podemos transportar nossa aplicação para ser executada nos mais variados SO (Windows, Linux, MacOS, etc), sem que seja necessário a mudança de código, libs ou outros itens.
+
+Basta termos o Docker instalado, clonamos o projeto, executar os comandos docker adequados, e temos a aplicação no ar.
+
 
 ## Arquitetura ideal
 
