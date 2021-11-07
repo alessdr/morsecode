@@ -6,6 +6,11 @@
 Este projeto tem o intuíto de atuar como uma pequena aplicação web, que possibilitará a seu usuário traduzir **código morse** para texto e vice-versa.
 
 
+## Funcionamento
+
+A idéia básica por traz do funcionamento de nossa aplicação, é que o usuário possa se conectar a um servidor via web socket, e iniciar um processo de comunicação, onde ele enviará dados ao servidor e este, em tempo real, retiornará a tradução do conteúdo desejado.
+
+
 ## Tecnologias empregadas
 
 Para o desenvolvimento de nossa aplicação tomamos como base as seguintes tecnologias:
