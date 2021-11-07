@@ -39,8 +39,4 @@ def disconnect_request():
 
 
 if __name__ == '__main__':
-    '''
-    environment = config('ENVIRONMENT')
-    port = config('PORT')
-    '''
     socketio.run(app, debug=False)

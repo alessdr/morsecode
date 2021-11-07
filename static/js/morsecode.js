@@ -2,6 +2,7 @@ const MSG_INIT = 'Connected';
 const MSG_ORIGIN_SYSTEM = 'S'
 const MSG_ORIGIN_MORSE = 'M'
 const MSG_ORIGIN_TEXT = 'T'
+const EVENT_NAME = 'mc_response'
 const NAMESPACE = '/morse-code-interpreter';
 
 const socket = io(NAMESPACE);
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         socket.emit('mc_event', {data: MSG_INIT, origin: MSG_ORIGIN_SYSTEM});
     });
 
-    socket.on('mc_response', function(msg, callBack) {
+    socket.on(EVENT_NAME, function(msg, callBack) {
         if (msg.origin === MSG_ORIGIN_SYSTEM) {
             document.getElementById("spnStatus").textContent = msg.data;
         } else if (msg.origin === MSG_ORIGIN_MORSE){
