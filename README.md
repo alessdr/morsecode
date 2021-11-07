@@ -46,7 +46,7 @@ Esta forma de empacotamento se faz muito eficaz, pois podemos transportar nossa 
 
 Basta termos o Docker instalado, clonamos o projeto, executar os comandos docker adequados, e temos a aplicação no ar.
 
-
+**Obs: ** O descritiva acima não considera tarefa adjacentes tais como configuração de DNS, Proxy Reverso, Firewall ou quaisqueis outros meios necessários para colocar uma aplicação funcionando em sua infraestrutura.
 ## Arquitetura ideal
 
 Não existe um padrão de arquitetura que resolva todos os problemas de todas as aplicações. Cada caso é um caso particular que deve ser estudado com atenção e cuidados.
